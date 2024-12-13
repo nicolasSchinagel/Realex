@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/searchmenu.css">
+    <title>Menu de Pesquisa Realex</title>
+</head>
+<body>
+    <header>
+        <img src="./src/assets/Realexlogo.png" id="logoinit">
+        <a id="inicio" href="./start.html">início</a>
+        <div id="search">
+            <img src="./src/assets/lupa.png" id="searchlogo" onclick="filtercards()">
+            <input type="text" placeholder="Pesquisar" id="searchbar">
+        </div>
+        <a id="user" href="./usermenu.html">
+          <h3 >City</h3>
+        <img src="./src/assets/userimg.png" id="userimg">
+        </a>
+    </header>
+    <section id="itemmenu">
+        <div class="carditem">
+             <img src="./src/assets/r8.png" class="card-img" data-marca="Audi" data-modelo="R8">
+        </div>
+        <div class="carditem">
+             <img src="./src/assets/chiron.png" class="card-img" data-marca="Bugatti" data-modelo="Chiron">
+        </div>
+        <div class="carditem">
+             <img src="./src/assets/divo.png" class="card-img" data-marca="Bugatti" data-modelo="Divo">
+        </div>
+        <a class="carditem" href="./cars/veyron.html">
+             <img src="./src/assets/veyron.png" class="card-img" data-marca="Bugatti" data-modelo="Veyron">
+        </a>
+        <div class="carditem">
+             <img src="./src/assets/enzo.png" class="card-img" data-marca="Ferrari" data-modelo="Enzo">
+        </div>
+        <a class="carditem" href="./cars/laferrari.html">
+             <img src="./src/assets/laferrari.png" class="card-img" data-marca="Ferrari" data-modelo="LaFerrari">
+        </a>
+        <div class="carditem">
+             <img src="./src/assets/aventador.png" class="card-img" data-marca="Lamborghini" data-modelo="Aventador">
+        </div>
+        <div class="carditem">
+             <img src="./src/assets/murcielago.png" class="card-img" data-marca="Lamborghini" data-modelo="Murciélago">
+        </div>
+        <a class="carditem" href="./cars/senna.html">
+             <img src="./src/assets/senna.png" class="card-img" data-marca="Maclaren" data-modelo="Senna">
+        </a>
+        <div class="carditem">
+             <img src="./src/assets/huayra.png" class="card-img" data-marca="Paganni" data-modelo="Huayra">
+        </div>
+        <div class="carditem">
+             <img src="./src/assets/zonda.png" class="card-img" data-marca="Paganni" data-modelo="Zonda">
+        </div>
+        <a class="carditem" href="./cars/agera.html">
+             <img src="./src/assets/agerars.png" class="card-img" data-marca="Koenigsegg" data-modelo="Agera">
+        </a>
+    </section>
+    <script src="./src/js/h3auto.js"></script>
+    <script src="./src/js/filtercards.js"></script>
+</body>
+</html>

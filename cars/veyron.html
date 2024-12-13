@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veyron</title>
+    <link rel="stylesheet" href="../src/css/car.css">
+</head>
+<body>
+    <header>
+        <img src="../src/assets/Realexlogo.png" id="logoinit">
+        <a id=inicio href="../start.html">início</a>
+        <div id="search">
+            <img src="../src/assets/lupa.png" id="searchlogo" onclick="firstsearch()">
+            <input type="text" placeholder="Pesquisar" id="searchbar">
+        </div>
+        <a id="user" href="../usermenu.html">
+            <h3>City</h3>
+        <img src="../src/assets/userimg.png" id="userimg">
+        </a>
+    </header>
+    <section id="menu">
+        <section id="car">
+            <img src="../src/assets/veyron16.4.jpg" id="img-car">
+            <input type="button" value="ver outro tipo" id="botao-tipo" onclick="modelos()">
+        </section>
+       <section id="info-menu">
+             <h3 id="nome">Nome: Bugatti Veyron 16.4</h2>
+             <h3 id="potencia">Potência: 1001 cavalos</h3>
+             <h3 id="velomax">Velocidade Máxima: 407 km/h</h3>
+             <h3 id="acel">Aceleração: 2,5 segundos de 0-100 km/h</h3>
+             <h3 id="peso">Peso: 1990 kg</h3>
+             <section id="comprar">
+            <h2> COMPRAR </h2>
+            <h3 id="preco">10'200'000,00 R$</h3>
+             </section>
+       </section>
+    </section>
+    <script src="../src/js/filtercardsfirstsearch.js"></script>
+    <script src="../src/js/veyron.js"></script>
+</body>
+</html>
