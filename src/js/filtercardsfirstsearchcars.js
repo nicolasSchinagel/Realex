@@ -6,5 +6,5 @@ document.getElementById("searchbar").addEventListener("keypress", function(event
 function firstsearch(){
 const searchValue = document.getElementById("searchbar").value;
 localStorage.setItem("searchValue", searchValue);
-window.location.href="./searchmenu.html";
+window.location.href="../searchmenu.html";
 }
