@@ -6,7 +6,7 @@ function buttonclick(){
 
   if(username == "city" && password == "better"){
     alert("Logado com sucesso")
-    window.location.href = "./start.html";
+    window.location.href = "start.html";
   }
   else{
     passwordbox.value = "";
