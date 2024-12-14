@@ -1,3 +1,10 @@
+/*Código com função para o botao para trocar o tipo do modelo
+
+Como fazer? Usando a lógica do conteúdo já apresentado de como mudar as imagens de tempos e tempos, vamos fazer algo semelhante,
+utilizando para outro princípio
+*/
+
+// Cria uma variável para cada característica do carro
 let nome = [
     "Bugatti Veyron 16.4",
     "Bugatti Veyron 16.4 Grand Sport",
@@ -40,13 +47,18 @@ let image = [
 "../src/assets/veyronss.jpg",
 "../src/assets/veyrongsv.jpg"
 ]
+//define o inicializador do index
 let index=0;
-
+//inicia a função modelos() uma vez para que tenha os valores na página ao entrar
 modelos();
+
+//criação da função modelos
 function modelos(){
+    //se o index for igual ao tamanho da array de imagens, o index é retornado, pois já alcançou o limite
  if(index == image.length){
     index = 0;
  }
+ //adiciona a variável de index correspondente para cada parte da página
  document.getElementById("nome").innerText = `Nome: ${nome[index]}`;
  document.getElementById("potencia").innerText = `Potência: ${potencia[index]}`;
  document.getElementById("velomax").innerText = `Velocidade Máxima: ${velomax[index]}`;
