@@ -160,5 +160,8 @@ header h4{
     .function{
         text-align: center;
     }
+    .text{
+        text-align: left;
+    }
    
 }

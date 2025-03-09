@@ -125,6 +125,8 @@ header{
 #base-info{
     margin-left: 200px;
     margin-right: 50px;
+    display: flex;
+    flex-direction: column;
 }
 #base-info h1{
     font-weight: bold;
@@ -146,11 +148,14 @@ header{
     color: var(--font-color3);
     font-family:'Times New Roman', Times, serif;
     margin-bottom: 15px;
+    text-align: justify;
 }
 #ld{
     width: 50px;
     height: 50px;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #ldimg{
     width: 50px;
@@ -201,11 +206,14 @@ header{
     }
     #info{
         padding-bottom: 350px;
+        margin-right: 0px;
     }
     #base{
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         margin-left: 0px;
+        margin-right: 0px;
         height: 1100px;
     }
     #cityimg{
@@ -217,6 +225,10 @@ header{
     #base-info{
         margin-left: 0;
         width: 80%;
+        margin-left: 0px;
+        margin-right: 0px;
+        align-items: center;
+        justify-content: center;
     }
     #base-info h1{
         text-align: center;
@@ -226,7 +238,9 @@ header{
         text-align: center;
         margin-right: 0;
     }
-
+    #info-text{
+        text-align: left;
+    }
 
 
 
