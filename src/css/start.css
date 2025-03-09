@@ -109,7 +109,7 @@ header{
 
 }
 #user:hover{
-    background-color: var(--font-color4);
+    background-color: goldenrod;
     cursor: pointer;
 }
 #presentantiontxt{
@@ -138,9 +138,9 @@ header{
 }
 
 @keyframes EfeitoPisca{
-    0%{ color: red; }
+    0%{ color: goldenrod; }
     50%{ color: var(--font-color3); }
-    100%{ color: red; }
+    100%{ color: goldenrod; }
 }
 #cards{
     display: flex;
@@ -149,9 +149,9 @@ header{
 .card{
     width: 400px;
     height: 250px;
-    border-radius: 30px;
+    border-radius: 10px;
     overflow: hidden;
-    background-color: var(--font-color1);
+    background-color: goldenrod;
     transition: 1s;
     text-decoration: none;
 }
@@ -172,7 +172,7 @@ header{
     cursor: pointer;
 }
 footer{
-    background-color: var(--font-color1);
+    background-color: rgb(98, 98, 98);
     padding-top: 30px;
     padding-bottom: 40px;
     display: flex;

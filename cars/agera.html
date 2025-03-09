@@ -16,24 +16,59 @@
         </div>
         <a id="user" href="../usermenu.html">
             <h3>City</h3>
-        <img src="../src/assets/userimg.png" id="userimg">
+        <img src="../src/assets/userimg.jfif" id="userimg">
         </a>
     </header>
     <section id="menu">
         <section id="car">
             <img src="" id="img-car">
-            <input type="button" value="ver outro tipo" id="botao-tipo" onclick="modelos()">
+            <div id="button-right" class="buttons" onclick="right()">
+                <img src="../src/assets/rightA.png" class="img-arrow" >
+            </div>
+            <div id="button-left" class="buttons" onclick="left()">
+                <img src="../src/assets/rightA.png" id="img-left" class="img-arrow">
+            </div>
+            <div id="radios">
+                <input type="radio" id="index-1" class="radiocheck" name="index">
+                <input type="radio" id="index-2" class="radiocheck" name="index">
+                <input type="radio" id="index-3" class="radiocheck" name="index">
+                <input type="radio" id="index-4" class="radiocheck" name="index">
+                <input type="radio" id="index-5" class="radiocheck" name="index">
+                <input type="radio" id="index-6" class="radiocheck" name="index">
+            </div>
         </section>
        <section id="info-menu">
-             <h3 id="nome"></h2>
-             <h3 id="potencia"></h3>
-             <h3 id="velomax"></h3>
-             <h3 id="acel"></h3>
-             <h3 id="peso"></h3>
-             <section id="comprar">
-            <h2> COMPRAR </h2>
-            <h3 id="preco"></h3>
-             </section>
+             <div id="left-info">
+                <h3 id="nome"></h3>
+                <div id="atributos-div">
+                    <h2 id="main-title">Atributos principais</h2>
+                   <div id="atributos-conjunto">
+                      <div class="atributo-caixa">
+                        <h2>potência</h2>
+                         <h3 id="potencia"></h3>
+                      </div>
+                      <div class="atributo-caixa">
+                        <h2>velocidade máxima</h2>
+                         <h3 id="velomax"></h3>
+                      </div>
+                      <div class="atributo-caixa">
+                        <h2> aceleração</h2>
+                         <h3 id="acel"></h3>
+                      </div>
+                      <div class="atributo-caixa">
+                        <h2>peso</h2>
+                         <h3 id="peso"></h3>
+                      </div>
+                  </div>
+               </div>
+            </div>
+             <div id="central-compras">
+                <h3 id="preco"></h3>
+                <h4>Preço fornecido pela própria Realex</h4>
+                 <section id="comprar">
+                   <h2> COMPRAR </h2>
+                 </section>
+            </div>
        </section>
     </section>
     <script src="../src/js/filtercardsfirstsearchcars.js"></script>

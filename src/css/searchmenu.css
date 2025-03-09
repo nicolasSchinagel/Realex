@@ -1,8 +1,8 @@
 :root{
-    --font-color1: red;
+    --font-color1: black;
     --font-color2: rgb(38, 35, 35);
     --font-color3: rgb(255, 255, 255);
-    --font-color4: rgb(111, 111, 215);
+    --font-color4: gold;
 }
 *{
     box-sizing: border-box;
@@ -100,27 +100,29 @@ header{
 
 }
 #user:hover{
-    background-color: var(--font-color4);
+    background-color: goldenrod;
     cursor: pointer;
 }
-#itemmenu{
+#itemmenu {
     background-color: var(--font-color1);
     padding-bottom: 600px;
     padding-top: 300px;
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: space-around;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Define 3 colunas fixas */
+    gap: 100px; /* Espaçamento entre os itens */
+    justify-items: center; /* Centraliza o conteúdo de cada item */
 }
-.carditem{
-    width: 30%;
+
+.carditem {
+    width: 100%; /* Use 100% para alinhar ao grid */
+    width: 90%; /* Define uma largura máxima para os cartões */
     height: 250px;
     overflow: hidden;
-    border-radius: 50px;
-    background-color: var(--font-color2);
-    margin-bottom: 150px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.0);
     text-decoration: none;
     transition: 1s;
+    margin-bottom: 80px;
 }
 .card-img{
     width: 100%;
@@ -132,12 +134,15 @@ header{
     color: var(--font-color4);
     font-weight: bold;
     text-align: center;
+    font-weight: bold;
     margin-top: 15px;
 }
 .carditem:hover{
     height: 330px;
     margin-bottom: 70px;
     cursor:pointer;
+    margin-bottom: 0;
+    background-color: rgba(255, 255, 255, 0.3);
 }
 .hidden{
     display: none;
@@ -180,12 +185,15 @@ header{
     #itemmenu{
         padding-top: 120px;
         padding-bottom: 700px;
+        grid-template-columns: repeat(2, 1fr); /* Define 2 colunas fixas */
+        gap: 10px;
     }
     .carditem{
-        width: 40%;
+        width: 80%;
         height: 150px;
-        border-radius: 30px;
+        border-radius: 8px;
         margin-bottom: 70px;
+        background-color: rgba(255, 255, 255, 0.3);
     }
     .card-img{
         height: 100px;
