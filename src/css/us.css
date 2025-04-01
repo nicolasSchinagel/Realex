@@ -125,24 +125,26 @@ header h4{
     .lefttype{
         margin-top: 80px;
         flex-direction: column;
-        height: 1200px;
+        height: 1600px;
         justify-content: center;
         align-items:center;
     }
     .righttype{
         margin-top: 80px;
         flex-direction: column;
-        height: 1200px;
+        height: 1600px;
         justify-content: center;
         align-items:center;
     }
     .img-left{
         margin-right: 0px;
-        margin-left: 0px
+        margin-left: 0px;
+        margin-bottom: 20px;
     }
     .img-right{
         margin-right: 0px;
         margin-left: 0px;
+        margin-bottom: 20px;
     }
     .info-left{
      align-items: center;
